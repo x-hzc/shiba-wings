@@ -6,8 +6,8 @@
 * 500 Free NFTs
 
 ## Implementation Details
-* Use Token 2022 Extension [Transfer Fees](https://spl.solana.com/token-2022/extensions#transfer-fees)
-* Implications are there is a 2% on all buy, sells and transfers
+* Use Token 2022 Extension [Transfer Fees](https://spl.solana.com/token-2022/extensions#transfer-fees) 
+* Implications are there is a 2% on all buy, sells and transfers (BERN has similar mechanisms)
 
 ## Flow
 1. Transfer occurs 
