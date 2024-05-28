@@ -7,7 +7,7 @@
 
 ## Implementation Details
 * Use Token 2022 Extension [Transfer Fees](https://spl.solana.com/token-2022/extensions#transfer-fees) 
-* Implications are there is a 2% on all buy, sells and transfers (BERN has similar mechanisms)
+* Implications are there is a 2% on all buy, sells and transfers ( BERN & SolarMoonSol use the same mechanisms for taxing )
 
 ## Flow
 1. Transfer occurs 
