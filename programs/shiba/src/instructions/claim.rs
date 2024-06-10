@@ -103,8 +103,8 @@ pub struct ClaimWithNFT<'info> {
     nft_token: Account<'info, TokenAccount>,
 
     #[account(
-        constraint = nft_metadata.collection.as_ref().unwrap().verified @ ClaimError::CollectionNotVerified,
-        constraint = nft_metadata.collection.as_ref().unwrap().key == global.collection @ ClaimError::InvalidCollection
+        constraint = nft_metadata.collection.as_ref().map_or(false, |c| c.verified) @ ClaimError::CollectionNotVerified,
+        constraint = nft_metadata.collection.as_ref().map_or(false, |c| c.key == global.collection) @ ClaimError::InvalidCollection
     )]
     nft_metadata: Box<Account<'info, MetadataAccount>>,
 
